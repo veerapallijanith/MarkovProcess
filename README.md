@@ -21,12 +21,28 @@ Assumptions for Markov Chain :
 
 ![image](https://user-images.githubusercontent.com/104613195/170175685-c6187523-f268-4a3b-b03d-8bbe62647a57.png)
 
+<br/>
+<br/>
 
 
 # Program
+```python
+# Developed by
+# Name: VEERAPALLI JANITH CHOWDARY
+# Register Number: 212220230057
+
+import numpy as np
+P0=[0.3,0.2,0.5]
+P=[[0,2/3,1/3],[1/2,0,1/2],[1/2,1/2,0]]
+n=8
+for i in range(1,n+1):
+    P0=np.multiply(P0,P)
+    print("\nThe %d - step probability distribution is\n"%i)
+    print(P0)
+```
 
 
-
-
-# Results and Output : 
-
+# Output
+![ma](https://user-images.githubusercontent.com/75235006/171330565-cc1a3610-1efa-4e29-aaac-e8851507e5f5.png)
+# Result
+Thus, the n-th step probability distribution matrix of the three state Markov chain was calculated.
